@@ -12,7 +12,7 @@ Ejemplo:
 Retorna:
 `{ "numero": 5, "factorial": "120", "paridad": "impar" }`
 
-#Tecnología
+## Tecnología
 Se hace uso de flask dentro de python.
 
 ## Para ejecutar (windows):
@@ -26,6 +26,7 @@ Se hace uso de flask dentro de python.
 
 ### Llamada síncrona HTTP al servicio de historial
 Después de calcular el factorial, el microservicio haría una solicitu POST al otro servicio encargado de almacenar el historial de cálculos en una base de datos externa. En la petición post se le enviaría el json que se le muestra al usuario, y puede ser también un campo donde diga la fecha y hora de la petición. 
+
 
 
 
