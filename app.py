@@ -16,11 +16,11 @@ def factorial_route(n):
         return jsonify({"error": f"n demasiado grande (máx {MAX_N})"}), 400
 
     fact = math.factorial(n)
-    label = parity_label(fact)  
+    label = parity_label(n)  
     return jsonify({
         "numero": n,
         "factorial": str(fact),   
-        "paridad_factorial": label
+        "paridad": label
     })
 
 if __name__ == "__main__":
